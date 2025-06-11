@@ -12,8 +12,6 @@
 
 ### Other Files
 
-- [Folder Structure File](folderStructure.txt)
-
 ## Project Folder Structure
 
 ```txt
@@ -23,6 +21,8 @@
 
 - The `out/` folder has the `.class` files (executable files).
 - The `src/` folder has the `.java` files (source code).
+
+[Full Folder Structure](folderStructure.txt)
 
 ---
 
@@ -43,7 +43,8 @@
 - To compile all `.java` files:
 
   ```sh
-  javac -d out src/**/*.java
+  find src -name "*.java" > info/sources.txt
+  javac -d out @~info/sources.txt
   ```
 
   **NOTE:**
@@ -53,6 +54,10 @@
   - Every `.java` file will be recompiled, even if it hasn't changed.
 
   - Already compiled files are NOT ignored — they are recompiled every time.
+
+  [More details on find](commands_def/find_command.md)
+
+  [more on javac command](commands_def/javac_command.md)
 
 ---
 
@@ -82,13 +87,15 @@ The `-cp` option stands for **"class path"**. It tells Java where to look for co
 
 If you want to clear `out/`, do this cleanly:
 
-```sh
-rm -rf out/
-mkdir out
-javac -d out src/**/*.java
+```bash
+rm -rf out/*
+find src -name "*.java" > info/sources.txt
+javac -d out @info/sources.txt
 ```
 
 This ensures no stale or old `.class` files remain.
+
+[More on rm command](commands_def/rm_command.md)
 
 ---
 
@@ -97,8 +104,10 @@ This ensures no stale or old `.class` files remain.
 To get the folder structure, use the command:
 
 ```sh
-tree /f /a > folderStructure.txt
+tree /f /a > info/folderStructure.txt
 ```
 
 - `/f` : lists all the files too
 - `/a` : uses only ASCII characters in the output
+
+[More details on tree](commands_def/tree_command.md)

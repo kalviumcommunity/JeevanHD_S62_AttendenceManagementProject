@@ -1,0 +1,29 @@
+Folder PATH listing
+Volume serial number is D86C-FF24
+C:.
+|   readme.md
+|   
++---Info
+|   |   folderStructure.txt
+|   |   sources.txt
+|   |   tips.md
+|   |   
+|   \---commands_def
+|           find_command.md
+|           javac_command.md
+|           tree_command.md
+|           
++---out
+|   \---com
+|       \---school
+|               Main.class
+|               
++---src
+|   \---com
+|       \---school
+|               Main.java
+|               
+\---~screenshot
+        Output_of_push.png
+        program_output.png
+        
