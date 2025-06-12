@@ -1,6 +1,7 @@
 Folder PATH listing
 Volume serial number is D86C-FF24
 C:.
+|   .gitignore
 |   readme.md
 |   
 +---Info
@@ -11,19 +12,20 @@ C:.
 |   \---commands_def
 |           find_command.md
 |           javac_command.md
+|           rm_command.md
 |           tree_command.md
 |           
 +---out
 |   \---com
 |       \---school
+|               Course.class
 |               Main.class
+|               Student.class
 |               
-+---src
-|   \---com
-|       \---school
-|               Main.java
-|               
-\---~screenshot
-        Output_of_push.png
-        program_output.png
-        
+\---src
+    \---com
+        \---school
+                Course.java
+                Main.java
+                Student.java
+                
