@@ -1,8 +1,15 @@
 package com.school;
 
 public class Course {
+    private int courseCounter = 101;
+
     int courseId;
     String courseName;
+
+    public Course(String courseName) {
+        this.courseId = courseCounter++;
+        this.courseName = courseName;
+    }
 
     public void setDetails(int id, String name) {
         this.courseId = id;
