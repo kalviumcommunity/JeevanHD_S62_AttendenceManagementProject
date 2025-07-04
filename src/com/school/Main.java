@@ -4,29 +4,19 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("---school Attendance System---");
 
-        Student[] students = new Student[2];
-        students[0] = new Student();
-        students[0].setDetails(1, "Kumar");
-        students[1] = new Student();
-        students[1].setDetails(2, "Ravi");
+        Student student1 = new Student("Kumar");
+        Student student2 = new Student("abhi");
 
-        Course[] courses = new Course[2];
-        courses[0] = new Course();
-        courses[0].setDetails(101, "Mathematics");
-        courses[1] = new Course();
-        courses[1].setDetails(102, "Science");
+        Course course1 =  new Course("Pcmc");
+        Course course2 = new Course("PcmB");
 
         System.out.println("Student Details:");
-        for (Student student : students) {
-            if (student != null)
-                student.displayDetails();
-        }
-        
-        System.out.println("\nCourse Details:");
-        for (Course course : courses) {
-            if (course != null)
-                course.displayDetails();
-        }
+        student1.displayDetails();
+        student2.displayDetails();
+    
+        System.out.println("Course Details");
+        course1.displayDetails();
+        course2.displayDetails();
 
         
     }
