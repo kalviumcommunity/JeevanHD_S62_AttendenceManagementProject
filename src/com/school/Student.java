@@ -2,7 +2,7 @@ package com.school;
 
 public class Student {
     private int nextStudentCounter = 1;
-    
+
     int studentId;
     String name;
 
@@ -11,10 +11,17 @@ public class Student {
         this.name = name;
     }
 
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public void displayDetails() {
         System.out.println("Student ID: " + studentId);
         System.out.println("Name: " + name);
     }
 
-    
 }
