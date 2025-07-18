@@ -75,7 +75,8 @@ java -cp out the.package.name
 java -cp out com.school.Main
 ```
 
-The `-cp` option stands for **"class path"**. It tells Java where to look for compiled `.class` files and libraries.
+The `-cp` option stands for **"class path"**. It tells Java where to look for compiled
+`.class` files and libraries.
 
 - `-cp out` means:
 

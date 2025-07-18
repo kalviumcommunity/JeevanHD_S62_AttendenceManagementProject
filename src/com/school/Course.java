@@ -16,9 +16,17 @@ public class Course {
         this.courseName = name;
     }
 
-    public void displayDetails() {
-        System.out.println("Course ID: " + courseId);
-        System.out.println("Course Name: " + courseName);
+    public int getCourseId() {
+        return courseId;
     }
-    
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void displayDetails() {
+        System.out.printf("Course ID: %d", courseId, "\n");
+        System.out.printf("Course Name: %s", courseName, "\n");
+    }
+
 }
